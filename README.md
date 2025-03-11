@@ -2,30 +2,31 @@
 A solution to learn algorithms and practice for Rubiks Cube Competitions.
 
 ## Documentation 
+#Generates a 2x2 Scramble
 ```
 /scramble2
 ```
-Generates a 2x2 Scramble
+#Generates a 3x3 Scramble
 ```
 /scramble3
 ```
-Generates a 3x3 Scramble
+#Generates 5 Scrambles as per WCA competition rules
 ```
 /compscrambles
 ```
-Generates 5 Scrambles as per WCA competition rules
+#Calculates the official WCA average of a 5 solve set
 ```
 /compaveragecalc/<t1>/<t2>/<t3>/<t4>/<t5>
 ```
-Calculates the official WCA average of a 5 solve set
+#Gets all alternate algorithms 
 ```
 /allalgs
 ```
-Gets all alternate algorithms 
+#Returns alternate algorithms posted by other users for specified PLL ( ie. Ua )
 ```
 /alt/<algname>
 ```
-Returns alternate algorithms posted by other users for specified PLL ( ie. Ua )
+#Abiity to Post an alternate algorithm for a specified PLL( ie. Ua ) Be Nice no weird posts please!!!
 ```
 POST
 curl -X POST "https://rottencalc.pythonanywhere.com/alt/<algname>" \
@@ -33,8 +34,7 @@ curl -X POST "https://rottencalc.pythonanywhere.com/alt/<algname>" \
      -d '{"alternate_algorithm": "MESSAGE"}'
 
 ```
-Abiity to Post an alternate algorithm for a specified PLL( ie. Ua ) Be Nice no weird posts please!!!
+#Returns the common algorithm for the specified PLL ( ie. Ua )
 ```
 /<algname>
 ```
-Returns the common algorithm for the specified PLL ( ie. Ua )
